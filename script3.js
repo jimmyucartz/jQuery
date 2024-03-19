@@ -39,4 +39,79 @@ $(() => {
     });
   });
   // add/remove
+  $(".append_text").click(() => {
+    $(".para_dse").append("<p><i>hello</i></p>");
+  });
+
+  $(".prepend_text").click(() => {
+    $(".para_dse").prepend("<p>hello</p>");
+  });
+
+  $(".append_list").click(() => {
+    $(".my_list").append("<li><i>hello</i></li>");
+  });
+
+  $(".prepend_list").click(() => {
+    $(".my_list").prepend("<li>hello</li>");
+  });
+
+  $(".append_multiple").click(() => {
+    let li = $("<li></li>").text("Hello");
+    let li2 = $("<li></li>").text("Hi");
+
+    $(".my_list").append(li, li2);
+  });
+
+  $(".prepend_multiple").click(() => {
+    let li = $("<li></li>").text("Hello");
+    let li2 = $("<li></li>").text("Good");
+    $(".my_list").prepend(li, li2);
+  });
+
+  //
+
+  $(".after_text").click(() => {
+    $(".para_dse1").after("<p><i>hello</i></p>");
+  });
+
+  $(".before_text").click(() => {
+    $(".para_dse1").before("<p>hello</p>");
+  });
+
+  $(".after_list").click(() => {
+    $(".my_list1").after("<li><i>List</i></li>");
+  });
+
+  $(".before_list").click(() => {
+    $(".my_list1").before("<li>List </li>");
+  });
+
+  $(".after_multiple").click(() => {
+    let li = $("<i></i> <br/>").text("Hello");
+    let li2 = $("<i></i>").text("Good");
+
+    $(".my_list1").after(li, li2);
+  });
+
+  $(".before_multiple").click(() => {
+    let li = $("<i></i> <br/>").text("Hello");
+    let li2 = $("<i></i>").text("Good");
+    $(".my_list1").before(li, li2);
+  });
+
+  //
+
+  $(".rm_first-div").click(() => {
+    $("div").remove();
+  });
+
+  $(".rm_div_children").click(() => {
+    $(".another_container").empty();
+  });
+
+  $(".filtered_rm").click(() => {
+    $("div").remove(".another_container");
+  });
+
+  //
 });
