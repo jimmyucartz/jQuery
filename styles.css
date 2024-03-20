@@ -1,18 +1,18 @@
-input {
-  margin-top: 10px;
+#container {
+  width: 100px;
+  height: 100px;
 }
 
-.container {
-  background-color: gray;
-  width: 100px;
+.bg-green {
+  background-color: green;
 }
 
 button,
 input[type="submit"] {
-  background-color: rgb(83, 83, 148);
+  background-color: rgb(2, 2, 2);
   color: white;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   box-shadow: none;
   border: 0;
@@ -22,11 +22,4 @@ button:hover,
 input[type="submit"]:hover {
   cursor: pointer;
   outline: 1px solid grey;
-}
-
-.headingAlt {
-  background-color: rgb(255, 255, 255);
-  width: 200px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
