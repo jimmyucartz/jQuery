@@ -1,0 +1,36 @@
+#container {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(243, 227, 227);
+  position: absolute;
+}
+
+.top_left {
+  top: 0px;
+  left: 0px;
+}
+
+button,
+input[type="submit"] {
+  background-color: rgb(33, 28, 189);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  padding: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+  outline: 1px solid rgb(240, 141, 141);
+}
+
+div > button {
+  position: relative;
+  margin-top: 40px;
+  left: 50%;
+  top: 50dvh;
+}
