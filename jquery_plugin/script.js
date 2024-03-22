@@ -30,4 +30,28 @@ $(() => {
         },
       ],
     });
+
+  $("#datepicker").datepicker({
+    showOtherMonths: true,
+    selectOtherMonths: true,
+    showButtonPanel: true,
+    dateFormat: "dd/mm/yy",
+    changeMonth: true,
+    changeYear: true,
+    showAnim: "clip",
+  });
+
+  $(".bg-red").on("click", () => {
+    $("#datepicker").datepicker("show");
+  });
+
+  $("#datepicker").val("22/03/2024");
+  $(".show_date").text(new Date("03/22/2024").toDateString());
+
+  $("#datepicker").change(function () {
+    let d = this.value.split("/");
+    let dat = new Date(d[2] + "/" + d[1] + "/" + d[0]);
+
+    $(".show_date").text(dat.toDateString());
+  });
 });

@@ -72,3 +72,76 @@ span.material-symbols-outlined {
   align-items: center;
   justify-content: center;
 }
+
+#datepicker {
+  /* padding: 5px; */
+  /* display: none; */
+  /* text-align: center; */
+  /* width: 150px; */
+}
+
+.ui-datepicker {
+  background-color: rgb(199, 199, 199) !important;
+}
+
+.ui-datepicker-week-end a {
+  color: red !important;
+}
+.ui-datepicker tr td:last-child a {
+  color: black !important;
+}
+
+.ui-widget-content button {
+  background-color: #7a5cfa !important;
+  color: white !important;
+}
+
+.ui-datepicker-header {
+  background-image: linear-gradient(
+    rgb(81, 74, 74),
+    rgb(128, 100, 100)
+  ) !important;
+}
+
+.ui-datepicker-week-end {
+  /* background-color: red; */
+}
+
+.container_date {
+  margin-top: 2rem;
+  .show_date {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 10px !important;
+}
+
+/* span[title="Sunday"] {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: green;
+  display: flex;
+} */
+
+input,
+select {
+  margin: 10px 0;
+  user-select: none;
+  padding: 10px;
+  border: rgb(179, 179, 179) 1px solid;
+  border-radius: 10px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+select {
+  padding: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: #7a5cfa solid 1px;
+}
